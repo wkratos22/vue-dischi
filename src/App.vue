@@ -9,6 +9,10 @@
       <MainComp />
     </div>
 
+     <div>
+      <DischiComp />
+    </div>
+
   </div>
 </template>
 
@@ -16,11 +20,13 @@
   import "bootstrap"
   import HeaderComp from './components/HeaderComp.vue'
   import MainComp from './components/MainComp.vue'
+  import DischiComp from './components/DischiComp.vue'
   export default {
     name: 'App',
     components: {
       HeaderComp,
-      MainComp
+      MainComp,
+      DischiComp
     }
   }
 

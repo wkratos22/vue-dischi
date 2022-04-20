@@ -1,15 +1,27 @@
 <template>
     <main class="main">
-        
+        <DischiComp
+        v-for="(element, index) in AlbumArray"
+        :key="index"
+        :author="element.author"
+        :poster="element.poster"
+        :title="element.title"
+        :year="element.year"
+        />
     </main>
 </template>
 
 <script>
     import axios from 'axios';
+    import DischiComp from './partials/DischiComp.vue'
 
     export default {
 
         name: 'MainComp',
+        comments: {
+            DischiComp
+        },
+
         data() {
             return {
                 AlbumArray: []
@@ -31,5 +43,6 @@
 <style scoped lang="scss">
     .main {
         background-color: #202B39;
+        height: 95vh;
     }
 </style>
