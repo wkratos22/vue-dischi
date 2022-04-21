@@ -1,14 +1,15 @@
 <template>
-    <main class="main">
+    <div class="main row">
         <DischiComp
         v-for="(element, index) in AlbumArray"
         :key="index"
         :author="element.author"
-        :image="element.poster"
+        :poster="element.poster"
         :title="element.title"
         :year="element.year"
+        :genre="element.genre"
         />
-    </main>
+    </div>
 </template>
 
 <script>
@@ -18,7 +19,7 @@
     export default {
 
         name: 'MainComp',
-        comments: {
+        components: {
             DischiComp
         },
 

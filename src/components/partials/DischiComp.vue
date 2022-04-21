@@ -1,6 +1,6 @@
 <template>
-  <div class="col text-center bg-card">
-    <img :src="image" alt="immagine">
+  <div class="col text-center my-5">
+    <img :src="poster" alt="immagine">
     <h3 class="my-3">{{title}}</h3>
     <h3 class="my-3">{{author}}</h3>
     <h3 class="my-3">{{year}}</h3>
@@ -12,9 +12,10 @@ export default {
   name: 'DischiComp',
   props: {
     author: String,
-    image: String,
+    poster: String,
     title: String,
     year: String,
+    genre: String,
   }
 }
 </script>
