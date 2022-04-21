@@ -4,7 +4,7 @@
         v-for="(element, index) in AlbumArray"
         :key="index"
         :author="element.author"
-        :poster="element.poster"
+        :image="element.poster"
         :title="element.title"
         :year="element.year"
         />

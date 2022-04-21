@@ -1,7 +1,9 @@
 <template>
-  <div>
-      <img :src="poster" alt="">
-      <h3 class="my-3">{{title}}</h3>
+  <div class="col text-center bg-card">
+    <img :src="image" alt="immagine">
+    <h3 class="my-3">{{title}}</h3>
+    <h3 class="my-3">{{author}}</h3>
+    <h3 class="my-3">{{year}}</h3>
   </div>
 </template>
 
@@ -10,7 +12,7 @@ export default {
   name: 'DischiComp',
   props: {
     author: String,
-    poster: String,
+    image: String,
     title: String,
     year: String,
   }
